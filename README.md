@@ -64,12 +64,11 @@
 
 ### 파일명 규칙
 ```
-플랫폼_레벨_문제명.java
+platform/level/id. title.java
 
 예시)
-PGS_lv1_두개뽑아서더하기.java
-PGS_lv2_타겟넘버.java
-BOJ_silver_에라토스테네스의체.java
+프로그래머스/lv2/12345. 타겟 넘버
+백준/Gold/1000. A＋B
 ```
 
 ### 커밋 메시지 규칙
