@@ -1,3 +1,14 @@
+/**
+ * 접근: 각 수포자의 반복 패턴을 따라 answers를 채점하고, 최고점을 받은 사람을 배열로 반환
+ * 시간복잡도: O(n)
+ *
+ * 풀이 메모:
+ * - 각 수포자의 찍기 패턴을 배열로 선언
+ * - answers를 순회하면서 현재 패턴 인덱스와 비교해 점수를 계산
+ * - 세 사람의 점수 중 최댓값을 구한 뒤, 최댓값과 같은 사람 번호를 결과에 담아 반환
+ * - 결과를 1, 2, 3 순서대로 담기 때문에 별도 정렬은 필요 없음
+ */
+
 import java.util.*;
 
 class Solution {
@@ -33,8 +44,6 @@ class Solution {
         if (score1 == highScore) list.add(1);
         if (score2 == highScore) list.add(2);
         if (score3 == highScore) list.add(3);
-        
-        Collections.sort(list);
         
         int[] answer = new int[list.size()];
         
